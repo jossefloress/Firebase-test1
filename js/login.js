@@ -30,7 +30,7 @@
             firebase.auth.PhoneAuthProvider.PROVIDER_ID
         ],
         // Terms of service url.
-        tosUrl: '../tos.html',
+        tosUrl: './tos.html',
     };
 
     // The start method will wait until the DOM is loaded.
