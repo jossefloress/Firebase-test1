@@ -57,7 +57,7 @@ btnAnonLogIn.addEventListener('click', e => {
 
 // Auth Listener 
 firebase.auth().onAuthStateChanged(firebaseUser => {
-    if (firebaseUser && firebaseUser.isAnonymous) {
+    if (firebaseUser) {
         window.location.replace("./main.html");
         // console.log(firebaseUser)
     }

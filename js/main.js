@@ -19,7 +19,7 @@ btnLogOut.addEventListener('click', e => {
 });
 
 firebase.auth().onAuthStateChanged(firebaseUser => {
-    if (firebaseUser && firebaseUser.isAnonymous) {
+    if (firebaseUser) {
         // window.location.replace("./main.html");
         // console.log(firebaseUser)
         btnLogin.classList.add('hide');
