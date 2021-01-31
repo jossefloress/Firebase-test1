@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Randomizer *Draft*</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+
+</head>
+
+
+<body>
+
+    <a href="login.html">
+        <p>login</p>
+    </a>
+
+    <header>
+        <h1>Randomizer</h1>
+    </header>
+
+    <nav></nav>
+
+    <section class="l1">
+        <form action="./startRandomizer.html" method="GET">
+            <label for="randomlist">Enter the items you would like to randomize:</label>
+            <br>
+
+            <textarea id="randomlist" name="randomlist" cols="20" rows="10"></textarea>
+            <br>
+
+            <input type="submit" value="Start Randomizer">
+        </form>
+        <div id="firebaseui-auth-container"></div>
+    </section>
+
+    <aside class="r1">
+        <img src="images/draft.jpg" alt="Spinning Wheel" width="90%">
+    </aside>
+
+    <footer>
+        <p>JF copyright &copy; 2020</p>
+    </footer>
+
+
+    <script src="./js/firebase.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
+
+
+</body>
+
+</html>
