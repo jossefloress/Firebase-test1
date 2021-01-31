@@ -21,12 +21,15 @@
     <!-- The surrounding HTML is left untouched by FirebaseUI.
      Your app may use that space for branding, controls and other customizations.-->
     <h1>Welcome to My Randomizer</h1>
-    <div id="firebaseui-auth-container"></div>
-    <button id="btnAnonLogIn"
-        class="firebaseui-idp-button mdl-button mdl-js-button mdl-button--raised firebaseui-idp-password firebaseui-id-idp-button"
-        style="position: relative; left: 42.9%;">Anon
-        Sign In</button>
-    <div id="loader">Loading...</div>
+    <div style="width: 100%;display: flex;justify-content: start;">
+        <div id="firebaseui-auth-container"></div>
+        <button id="btnAnonLogIn"
+            class="firebaseui-idp-button mdl-button mdl-js-button mdl-button--raised firebaseui-idp-password firebaseui-id-idp-button"
+            style="max-width:100px;">Anon
+            Sign In</button>
+        <div id="loader">Loading...</div>
+    </div>
+
 
     <script src="./js/firebase.js"></script>
     <script src="./js/login.js"></script>
