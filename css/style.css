@@ -1,5 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: lightblue;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
@@ -11,40 +17,61 @@ header {
     display: none;
 }
 
-h1 {
-    font-size: 50px;
-    color: red;
+.flexContainer {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-footer {
-    position: relative;
-    margin-top:100px;
-    bottom: -100%;
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+
+.randomizerForm {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
+.l1 {
+    font-size: 20px;
+}
 
-textarea#randomlist {
-    font-size: 30px;
+#randomlist {
+    font-size: 1.5em;
     resize: none;
     border-color: white;
     border-radius: 10% ;
     padding: 10px 10px 10px 10px;
-
+    margin: 0 auto;
 }
 
-section.l1 {
-    float: left;
-    margin: 0 0 0 5%;
-    font-size: 20px;
-    /* border: 1px solid grey; */
+.r1 {
+    margin: auto 0;
+    height: auto;
+    max-width: 20em;
 }
 
-aside.r1 {
-    float: auto;
-    margin: 0 0 0 60%;
-    /* border: 1px solid grey */
+.r1 img {
+    max-width: 100%;
+}
 
+@media screen and (max-width: 700px){
+    .flexContainer  {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 40px; 
+    }
+
+    .randomizerForm {
+        row-gap: 2px;
+    }
+
+    #randomlist {
+        width: 90%;
+    }
 }
 
 

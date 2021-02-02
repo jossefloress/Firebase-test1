@@ -1,5 +1,7 @@
 // Initialize the FirebaseUI Widget using Firebase.
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
+const btnAnonLogIn = document.getElementById('btnAnonLogIn');
+
 
 var uiConfig = {
     callbacks: {
@@ -33,21 +35,6 @@ var uiConfig = {
 
 // The start method will wait until the DOM is loaded.
 ui.start('#firebaseui-auth-container', uiConfig);
-
-const btnAnonLogIn = document.getElementById('btnAnonLogIn');
-
-// btnAnonLogIn.addEventListener('click', e => {
-//     firebase.auth().signInAnonymously()
-//         .then(() => {
-//             var uid = firebase.use
-//         })
-//         .catch((error) => {
-//             var errorCode = error.code;
-//             var errorMessage = error.message;
-//             // ...
-//         });
-
-// });
 
 
 btnAnonLogIn.addEventListener('click', e => {

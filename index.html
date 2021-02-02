@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -20,13 +20,14 @@
 <body>
     <!-- The surrounding HTML is left untouched by FirebaseUI.
      Your app may use that space for branding, controls and other customizations.-->
-    <h1>Welcome to My Randomizer</h1>
-    <div style="width: 100%;display: flex;justify-content: start;">
+    <header>
+        <h1>Welcome to My Randomizer</h1>
+    </header>
+    <div class="flexContainer">
         <div id="firebaseui-auth-container"></div>
         <button id="btnAnonLogIn"
             class="firebaseui-idp-button mdl-button mdl-js-button mdl-button--raised firebaseui-idp-password firebaseui-id-idp-button"
-            style="max-width:100px;">Anon
-            Sign In</button>
+            style="max-width:150px;">Sign In Anonymously</button>
         <div id="loader">Loading...</div>
     </div>
 

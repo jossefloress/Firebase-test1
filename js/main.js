@@ -1,19 +1,5 @@
 const btnLogin = document.getElementById('btnLogin');
 
-firebase.auth().onAuthStateChanged(function (user) {
-    if (user) {
-        // User is signed in, see docs for a list of available properties
-        // https://firebase.google.com/docs/reference/js/firebase.User
-        uid = user.uid;
-        // ...
-    } else {
-        // User is signed out
-        // ...
-        window.location.replace("./index.html");
-
-    }
-});
-
 btnLogOut.addEventListener('click', e => {
     firebase.auth().signOut();
 });
@@ -26,5 +12,6 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     }
     else {
         console.log("Not loggedin");
+        window.location.replace("./index.html");
     }
 });
